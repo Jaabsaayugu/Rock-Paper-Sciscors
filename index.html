@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+ <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <div class="score">
+        Player: <span id="player-score">0</span> |
+        Computer: <span id="computer-score">0</span>
+      </div>
+    </header>
+
+    <main>
+      <div class="choices">
+        <div id="player-choice">#</div>
+        <div id="computer-choice">#</div>
+      </div>
+      <div id="result">Make your move!</div>
+    </main>
+    
+    <footer>
+      <button onclick="play('rock')">✊</button>
+      <button onclick="play('paper')">✋</button>
+      <button onclick="play('scissors')">✌️</button>
+    </footer>
+    <p>Made with ❤️ by <a href="https://github.com/jaabsaayugu">Jabez</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

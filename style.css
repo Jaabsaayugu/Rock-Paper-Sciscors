@@ -1,0 +1,91 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  height: 100vh;
+  background-image:linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/RPS.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: gold;
+  line-height: 1.5;
+  
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 50rem;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  border: .1px solid gold;
+  padding: 1rem;
+  border-radius: 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 1rem rgba(255, 215, 0, 0.5);
+}
+
+.choices {
+  display: flex;
+  justify-content: space-between;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+.player-choice, .computer-choice {
+  cursor: pointer;
+  border: 2px solid gold;
+  border-radius: 1rem;
+  padding: 1rem;  
+}
+#result {
+  font-size: 1rem;
+  margin: 2rem 0;
+}
+
+footer button {
+  font-size: 4rem;
+  margin: 1rem;
+  padding: 1rem;
+  background: #fff0;
+  border: 2px solid gold;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer button:active {
+  transform: scale(0.9);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  margin-top: 2rem;
+  
+}
+footer p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+footer button:hover {
+  background: black;
+  color: white;
+}
+a {
+  color: gold;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
