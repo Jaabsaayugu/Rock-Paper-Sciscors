@@ -1,14 +1,15 @@
 body {
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   text-align: center;
   height: 100vh;
-  background-image:linear-gradient( rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(/RPS.png);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/RPS.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: gold;
   line-height: 1.5;
-  
+
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -28,7 +29,7 @@ header h1 {
 .score {
   font-size: 1.4rem;
   margin-bottom: 2rem;
-  border: .1px solid gold;
+  border: 0.1px solid gold;
   padding: 1rem;
   border-radius: 1rem;
   background: rgba(0, 0, 0, 0.5);
@@ -41,11 +42,12 @@ header h1 {
   font-size: 5rem;
   margin: 2rem 0;
 }
-.player-choice, .computer-choice {
+.player-choice,
+.computer-choice {
   cursor: pointer;
   border: 2px solid gold;
   border-radius: 1rem;
-  padding: 1rem;  
+  padding: 1rem;
 }
 #result {
   font-size: 1rem;
@@ -71,7 +73,6 @@ footer {
   justify-content: center;
   align-items: bottom;
   margin-top: 2rem;
-  
 }
 footer p {
   font-size: 1.2rem;
