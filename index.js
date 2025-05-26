@@ -30,7 +30,8 @@ function play(playersChoice) {
   const computersChoice = getComputersChoice();
   const result = findWinner(playersChoice, computersChoice);
 
-  document.getElementById("player-choice").textContent = emojiMap[playersChoice];
+  document.getElementById("player-choice").textContent =
+    emojiMap[playersChoice];
   document.getElementById("computer-choice").textContent =
     emojiMap[computersChoice];
 
