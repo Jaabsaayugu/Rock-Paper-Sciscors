@@ -16,6 +16,30 @@ body {
   margin: 0;
   padding: 20px;
 }
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+#restart-btn {
+  text-align: right;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.7rem;
+  background-color: navy;
+  color: white;
+  border: 2px solid gold;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#restart-btn:hover {
+  background-color: gold;
+  color: black;
+}
 
 .container {
   max-width: 50rem;
@@ -53,6 +77,8 @@ header h1 {
 #result {
   font-size: 1rem;
   margin: 2rem 0;
+  border: 0.1px solid gold;
+  box-shadow: 0 0 1rem rgba(255, 215, 0, 0.5);
 }
 
 footer button {
