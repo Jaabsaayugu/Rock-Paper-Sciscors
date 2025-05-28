@@ -6,6 +6,7 @@ body {
     linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/RPS.png);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   color: gold;
   line-height: 1.5;
@@ -89,4 +90,54 @@ a {
 a:hover {
   color: white;
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .score {
+    font-size: 1rem;
+  }
+
+  .choices {
+    font-size: 3rem;
+  }
+
+  footer button {
+    font-size: 2rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .choices {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-choice,.computer-choice {
+    max-width: 100px;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+
+  .score {
+    font-size: 0.9rem;
+  }
+
+  #result {
+    font-size: 0.9rem;
+  }
+
+  footer button {
+    font-size: 1.5rem;
+  }
 }
